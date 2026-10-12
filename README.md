@@ -14,4 +14,4 @@ Upload a track, detect beats, export cut markers for Premiere
 
 
 # logs
- - [10/12/2026] Configured Project and deployment
+ - [10/12/2026] Configured Project and deployment.
