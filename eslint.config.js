@@ -14,7 +14,9 @@ export default defineConfig([
       'no-restricted-imports': ['error', { patterns: ['../shell/*', '../ui/*',
       'react', 'react-dom'] }],
       'no-restricted-globals': ['error', 'window', 'document', 'AudioContext'],
-      },
+      }
+  },
+  {
     files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,
@@ -25,6 +27,6 @@ export default defineConfig([
     ],
     languageOptions: {
       globals: globals.browser,
-    },
-  },
+    }
+   }
 ])
