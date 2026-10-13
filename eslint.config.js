@@ -9,6 +9,12 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 export default defineConfig([
   globalIgnores(['dist']),
   {
+    files: ['src/core/**/*.ts'],
+    rules: {
+      'no-restricted-imports': ['error', { patterns: ['../shell/*', '../ui/*',
+      'react', 'react-dom'] }],
+      'no-restricted-globals': ['error', 'window', 'document', 'AudioContext'],
+      },
     files: ['**/*.{ts,tsx}'],
     extends: [
       js.configs.recommended,
