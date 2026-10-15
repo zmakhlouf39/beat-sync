@@ -1,6 +1,6 @@
 /** Averages any number of channels into one mono signal. O(channels x
 samples). */
-export function mixToMono(channels: readonly Float32Array[]): Float32Array { //readonly turns accidental mutation into a compile error
+export function mixToMono(channels: readonly Float32Array[]): Float32Array { 
     const length = channels[0].length;
     const mono = new Float32Array(length);
 

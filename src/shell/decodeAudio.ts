@@ -7,7 +7,7 @@ export interface DecodedAudio {
     readonly duration: number;  // seconds
 }
 
-/** Shell code: browser APIs only, no maths. decodeAudioData resamples to ctx.sampleRate. */
+
 export async function decodeFile(file: File, ctx: AudioContext):
 Promise<DecodedAudio> {
 const bytes = await file.arrayBuffer();
